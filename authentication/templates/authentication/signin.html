@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/signinA.css' %}">
+    <title>Admin Signin</title>
+</head>
+<body>
+    
+    
+    <div class="forms">
+        <h3>Admin Signin</h3>
+        <form action="signin" method ="post">
+            {% csrf_token %}
+            
+            <label for="">Username</label>
+            <input type="text" id="username" name="username" placeholder="Create a username" required>
+
+            <label for="">Password</label>
+            <input type="password" id="pass1" name="pass1" placeholder="Create your password" required>
+
+            <button type="submit"><a href="/lastpage"></a><b>signin</b></button><br><br>
+
+            <a href="/" class="a">Forgotten password</a>
+        
+    
+        </form>
+</div>
+</body>
+</html>

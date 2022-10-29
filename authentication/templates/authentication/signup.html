@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/page3.css' %}">
+    <title>Admin Signup</title>
+</head>
+<body>
+
+    
+    
+    <div class="forms">       
+        <h3>ADMIN SIGNUP</h3>
+        <form action="/signup" method="POST">
+        {% csrf_token %}
+            <label for="">Username</label>
+            <input type="text" id="username" name="username" placeholder="Create a username" required>
+            
+            <label for="">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="">Designation</label>
+            <input type="text" id="destination" name="destination" placeholder="Enter your destination" required>
+            
+            <label for="">Email id</label>
+            <input type="text" id="email" name="email" placeholder="Enter your Email id" required>
+            
+            <label for="">Password</label>
+            <input type="password" id="pass1" name="pass1" placeholder="Create your password" required>
+            
+            <label for=""> Confirm password</label>
+            <input type="password" id="pass2" name="pass2" placeholder="Confirm your password" required>
+            
+            <button type="submit"><b>SIGNUP</b></button>       
+         </form>
+    </div>
+
+</body>
+</html>

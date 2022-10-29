@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/signinA.css' %}">
+    <title>Super Admin Signin</title>
+</head>
+<body>
+    
+    <div class="forms"> 
+        <h3>SUPER ADMIN SIGNIN</h3>
+        <form action="/signinA" method="GET">
+           {% csrf_token %}
+            <label for="">Username</label>
+            <input type="text" id="username" name="username" placeholder="create a user name" required>
+
+            <label for="">password</label>
+            <input type="password" id="pass0" name="pass0" placeholder="enter your password" required><br>
+
+            <button type="submit"><B>SIGNIN</B></button><br><br>
+
+            <a href="/" class="a">Forgotten password</a>
+        
+    
+        </form>
+</div>
+</body>
+</html>

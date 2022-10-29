@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,#3f5efb, #fc466b);
+}
+
+.forms {
+    width: 25rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 255, 255,0.06);
+    box-shadow: 0 8px 32px 0 rgb(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border-left: 1px solid rgb(255, 255, 255,0.3);
+    border-top: 1px solid rgb(255, 255, 255,0.3);
+}
+
+.forms:before{
+    content: '';
+    position: absolute;
+    bottom: 2%;
+    right:25%;
+    width: 200px;
+    height: 200px;
+    background: magenta;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.forms:after{
+    content: '';
+    position: absolute;
+    top: 2%;
+    left:25%;
+    width: 200px;
+    height: 200px;
+    background: magenta;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: .8;
+}
+
+
+h3{
+    font-size: 30px;
+    text-align: center;
+    color: azure;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    letter-spacing:3px;
+    margin-bottom: 5%;
+    opacity: .7;
+}
+
+label{
+    font-size: 15px;
+    color: white;
+    margin-left: 10%;
+    opacity: .8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+input{
+    width: 80%;
+    margin: 1% ;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    border-bottom: 2px solid rgb(255, 255, 255,0.10);
+    opacity: .8;
+    cursor: pointer;
+
+}
+
+button{
+    width: 50%;
+    margin: 2% auto;
+    color: white;
+    font-size: 15px;
+    opacity: .8;
+    background: rgb(255, 255, 255,0.06);
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255,0.2);
+    box-shadow: 3px 3px 5px rgb(31, 38, 135, 0.37);
+    border-left: 1px solid rgb(255, 255, 255,0.3);
+    border-top: 1px solid rgb(255, 255, 255,0.3);
+    margin-left: 25%;
+    cursor: pointer;
+
+}
